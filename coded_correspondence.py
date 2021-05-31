@@ -4,6 +4,9 @@
 
 # To code and decode various messages
 
+# Ceasar Cipher
+# monoalphabetic substitution cipher
+
 # Decode Message (with an offset of 10). 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 punctuation = ".,?'! "
@@ -68,9 +71,61 @@ print(decoder(message_two, 12))
 # Decode Caesar Cipher when shift (offset) value not known
 coded_message = "wyumul wcjbylm bupy vyyh uliohx mchwy liguh ncgym. wigjonylm bupy lyhxylyx nbyg uhx inbyl ifx wcjbylm ivmifyny.  nby luwy cm ih ni eyyj ihy mnyj ubyux uhx eyyj iol gymmuaym muzy."
 
-# Simply brute force though all 25 of the possible shifts (offsets) to break code.
+# Brute force though all 25 of the possible shifts (offsets) to break code.
 for i in range(1,26):
     print("offset: " + str(i))
     print("\t " + decoder(coded_message, i) + "\n")
 # Output
 #  "ceasar ciphers have been around since roman times. computers have rendered them and other old ciphers obsolete.  the race is on to keep one step ahead and keep our messages safe."
+
+
+# The Vigenère Cipher
+# polyalphabetic substitution cipher
+
+def vigenere_decoder(coded_message, keyword):
+    letter_pointer = 0
+    keyword_final = ''
+    for i in range(0,len(coded_message)):
+        if coded_message[i] in punctuation:
+            keyword_final += coded_message[i]
+        else:
+            keyword_final += keyword[letter_pointer]
+            letter_pointer = (letter_pointer+1)%len(keyword)
+    translated_message = ''
+    for i in range(0,len(coded_message)):    
+        if not coded_message[i] in punctuation:
+            ln = alphabet.find(coded_message[i]) - alphabet.find(keyword_final[i])
+            translated_message += alphabet[ln % 26]
+        else:
+            translated_message += coded_message[i]
+    return translated_message
+
+message = "lmap swci hptvawro! kqvichgi rqeltz bihapkt ltgdlth pvs gpat wdtkis!"
+keyword = "pipe"
+print(vigenere_decoder(message, keyword))
+# Output
+# well done sherlock! vigenère cipher message decoded and case solved!  
+
+def vigenere_coder(message, keyword):
+    letter_pointer = 0
+    keyword_final = ''
+    for i in range(0,len(message)):
+        if message[i] in punctuation:
+            keyword_final += message[i]
+        else:
+            keyword_final += keyword[letter_pointer]
+            letter_pointer = (letter_pointer+1)%len(keyword)
+    translated_message = ''
+    for i in range(0,len(message)):
+        if message[i] not in punctuation:
+            ln = alphabet.find(message[i]) + alphabet.find(keyword_final[i])
+            translated_message += alphabet[ln % 26]
+        else:
+            translated_message += message[i]
+    return translated_message
+
+message_for_s = "an interesting and fun introduction to becoming an expert at crytography!"
+keyword = "pipe"
+# an interesting and fun introduction to becoming an expert at crytography!
+print(vigenere_coder(message_for_s,keyword))
+print(vigenere_decoder(vigenere_coder(message_for_s, keyword), keyword))
