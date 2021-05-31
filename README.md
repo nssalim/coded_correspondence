@@ -20,19 +20,19 @@
 <li>Define two functions decoder(message, offset) and coder(message, offset) that can be used to easily decode and code messages given any known offset.</li>
 
 <p>message_one</p>
-<ul><b>kyv fwwjvk wfi kyv jvtfeu dvjjrxv zj knvcmv.<ul><b>
+<ul><b>kyv fwwjvk wfi kyv jvtfeu dvjjrxv zj knvcmv.</b></ul>
 <p>message one uses an offset of 9 but advises message two will be solved with a different offset number.</p>
 <p>output</p>
 <ul><b>the offset for the second message is twelve.</b></ul>
 
 <p>message two is solved by using the offset mentioned by message one.</p>
 <p>message_two</p>
-<ul><b>dsftcfawbu aizhwdzs qosgof qwdvsfg vszdg aoys qcrsr asggousg acfs gsqifs!<ul><b>
+<ul><b>dsftcfawbu aizhwdzs qosgof qwdvsfg vszdg aoys qcrsr asggousg acfs gsqifs!</b></ul>
 <p>output</p>
 <p>performing multiple caesar ciphers helps make coding messages more secure!</p>
 
 <li>Decode Caesar Cipher when shift (offset) value not known</li>
-<ul><b>wyumul wcjbylm bupy vyyh uliohx mchwy liguh ncgym. wigjonylm bupy lyhxylyx nbyg uhx inbyl ifx wcjbylm ivmifyny.  nby luwy cm ih ni eyyj ihy mnyj ubyux uhx eyyj iol gymmuaym muzy.<ul><b>
+<ul><b>wyumul wcjbylm bupy vyyh uliohx mchwy liguh ncgym. wigjonylm bupy lyhxylyx nbyg uhx inbyl ifx wcjbylm ivmifyny.  nby luwy cm ih ni eyyj ihy mnyj ubyux uhx eyyj iol gymmuaym muzy.</b></ul>
 
 
 <br>
