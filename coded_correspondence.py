@@ -30,9 +30,9 @@ for letter in message_for_s:
         translated_message += letter
 print(translated_message)
 # output
-# xubbe ixuhbesa! uluho rkttydw ydluijywqjeh ademi jxyi! mxqj ubiu xqlu oek wej?
+# xxubbe ixuhbesa! uluho rkttydw ydluijywqjeh ademi jxyi! mxqj ubiu xqlu oek wej?
 
-# Define two functions decoder(message, offset) and coder(message, offset) that can be used to easily decode and code messages given any offset.
+# Define two functions decoder(message, offset) and coder(message, offset) that can be used to easily decode and code messages given any known offset.
 def decoder(message, offset):
     translated_message = ""
     for letter in message:
@@ -61,7 +61,16 @@ print(decoder(message_one, 9))
 
 #  message two is solved by using the offset mentioned by message one.
 message_two = "dsftcfawbu aizhwdzs qosgof qwdvsfg vszdg aoys qcrsr asggousg acfs gsqifs!"
-
 print(decoder(message_two, 12))
 # output
 # performing multiple caesar ciphers helps make coding messages more secure!
+
+# Decode Caesar Cipher when shift (offset) value not known
+coded_message = "wyumul wcjbylm bupy vyyh uliohx mchwy liguh ncgym. wigjonylm bupy lyhxylyx nbyg uhx inbyl ifx wcjbylm ivmifyny.  nby luwy cm ih ni eyyj ihy mnyj ubyux uhx eyyj iol gymmuaym muzy."
+
+# Simply brute force though all 25 of the possible shifts (offsets) to break code.
+for i in range(1,26):
+    print("offset: " + str(i))
+    print("\t " + decoder(coded_message, i) + "\n")
+# Output
+#  "ceasar ciphers have been around since roman times. computers have rendered them and other old ciphers obsolete.  the race is on to keep one step ahead and keep our messages safe."
