@@ -31,3 +31,37 @@ for letter in message_for_s:
 print(translated_message)
 # output
 # xubbe ixuhbesa! uluho rkttydw ydluijywqjeh ademi jxyi! mxqj ubiu xqlu oek wej?
+
+# Define two functions decoder(message, offset) and coder(message, offset) that can be used to easily decode and code messages given any offset.
+def decoder(message, offset):
+    translated_message = ""
+    for letter in message:
+        if not letter in punctuation:
+            letter_value = alphabet.find(letter)
+            translated_message += alphabet[(letter_value + offset) % 26]
+        else:
+            translated_message += letter
+    return translated_message
+    
+def coder(message, offset):
+    translated_message = ""
+    for letter in message:
+        if not letter in punctuation:
+            letter_value = alphabet.find(letter)
+            translated_message += alphabet[(letter_value - offset) % 26]
+        else:
+            translated_message += letter
+    return translated_message
+
+message_one = "kyv fwwjvk wfi kyv jvtfeu dvjjrxv zj knvcmv."
+# message one uses an offset of 9 but advises message two will be solved with a different offset number.
+print(decoder(message_one, 9))
+# output
+# the offset for the second message is twelve.
+
+#  message two is solved by using the offset mentioned by message one.
+message_two = "dsftcfawbu aizhwdzs qosgof qwdvsfg vszdg aoys qcrsr asggousg acfs gsqifs!"
+
+print(decoder(message_two, 12))
+# output
+# performing multiple caesar ciphers helps make coding messages more secure!
