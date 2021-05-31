@@ -38,7 +38,7 @@
 <p>Output</p>
 <ul><b>ceasar ciphers have been around since roman times. computers have rendered them and other old ciphers obsolete.  the race is on to keep one step ahead and keep our messages safe.</b></ul>
 
-
+<br>
 <p><b>The Vigenère Cipher</b> - polyalphabetic substitution cipher</p>
 <ul><b>lmap swci hptvawro! kqvichgi rqeltz bihapkt ltgdlth pvs gpat wdtkis!</b></ul>
 <p>keyword = "pipe"</p>
@@ -49,4 +49,4 @@
 <p>keyword = "puzzle"</p>
 <p>Output</p>
 <ul><b>ph hmeigyrstrv umc qyc cmscssobstsc nn apgdghmr ec ywopvi us bcciifqltws!</b></ul>
-<br>
+
