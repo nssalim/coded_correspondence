@@ -46,6 +46,7 @@
 <ul><b>well done sherlock! vigenère cipher message decoded and case solved!</b></ul>
 
 <ul><b>an interesting and fun introduction to becoming an expert at crytography!</b></ul>
-<p>keyword = "pipe"</p>
-
+<p>keyword = "puzzle"</p>
+<p>Output</p>
+<ul><b>ph hmeigyrstrv umc qyc cmscssobstsc nn apgdghmr ec ywopvi us bcciifqltws!</b></ul>
 <br>
