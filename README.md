@@ -14,7 +14,7 @@
 <ul><b>hello sherlock! every budding investigator knows this! what else have you got?</b></ul>
 
 <p>output</p>
-<ul><b>xxubbe ixuhbesa! uluho rkttydw ydluijywqjeh ademi jxyi! mxqj ubiu xqlu oek wej?<b><ul>
+<ul><b>xxubbe ixuhbesa! uluho rkttydw ydluijywqjeh ademi jxyi! mxqj ubiu xqlu oek wej?</b></ul>
 
 
 <li>Define two functions decoder(message, offset) and coder(message, offset) that can be used to easily decode and code messages given any known offset.</li>
@@ -32,7 +32,20 @@
 <p>performing multiple caesar ciphers helps make coding messages more secure!</p>
 
 <li>Decode Caesar Cipher when shift (offset) value not known</li>
+<p>Brute force though all 25 of the possible shifts (offsets) to break code.</p>
 <ul><b>wyumul wcjbylm bupy vyyh uliohx mchwy liguh ncgym. wigjonylm bupy lyhxylyx nbyg uhx inbyl ifx wcjbylm ivmifyny.  nby luwy cm ih ni eyyj ihy mnyj ubyux uhx eyyj iol gymmuaym muzy.</b></ul>
 
+<p>Output</p>
+<ul><b>ceasar ciphers have been around since roman times. computers have rendered them and other old ciphers obsolete.  the race is on to keep one step ahead and keep our messages safe.</b></ul>
+
+
+<p><b>The Vigenère Cipher</b> - polyalphabetic substitution cipher</p>
+<ul><b>lmap swci hptvawro! kqvichgi rqeltz bihapkt ltgdlth pvs gpat wdtkis!</b></ul>
+<p>keyword = "pipe"</p>
+<p>Output</p>
+<ul><b>well done sherlock! vigenère cipher message decoded and case solved!</b></ul>
+
+<ul><b>an interesting and fun introduction to becoming an expert at crytography!</b></ul>
+<p>keyword = "pipe"</p>
 
 <br>
